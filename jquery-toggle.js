@@ -278,7 +278,9 @@
 				if (!settings.nocolor) {
 					let color = settings['color_' + i] || settings.color[(i - 1) % settings.color.length];
 					if (color === 'default') color = 'secondary';
-					args[i]['color'] = 'btn-' + color;
+					// State 0 is considered the "not selected"/default state → outline.
+					const variant = (i === 0) ? 'btn-outline-' : 'btn-';
+					args[i]['color'] = variant + color;
 				}
 			}
 			button.data('jquery_toggle_options', args);
