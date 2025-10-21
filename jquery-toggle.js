@@ -213,7 +213,7 @@
 		num_of_states: 2,
 		// Bootstrap 5 replacement for BS3 "default"
 		color_0: 'secondary',
-		color: ['primary', 'danger', 'warning', 'success', 'info'],
+		color: ['secondary', 'primary', 'danger', 'warning', 'success', 'info'],
 		nocolor: false,
 		clickHandler: toggle_mltsb_state,
 		buttonClass: 'btn',
